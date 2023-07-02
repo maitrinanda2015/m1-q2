@@ -1,0 +1,19 @@
+2.
+public class FibonacciSeries {
+    public static void main(String[] args) {
+        int limit = 20; // Define the limit or the number until which Fibonacci series should be printed
+
+        int prevNum = 0;
+        int currNum = 1;
+
+        System.out.println("Fibonacci Series up to " + limit + ":");
+
+        for (int i = 1; i <= limit; i++) {
+            System.out.print(prevNum + " ");
+
+            int nextNum = prevNum + currNum;
+            prevNum = currNum;
+            currNum = nextNum;
+        }
+    }
+}
